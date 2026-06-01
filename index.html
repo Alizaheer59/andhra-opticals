@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andhra Opticals & Watch Co. | Premium Eyewear & Watches</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #F1D382 100%); }
+        .navy-dark { background-color: #001F3F; }
+        .text-gold { color: #D4AF37; }
+        .border-gold { border-color: #D4AF37; }
+        .hover-gold:hover { color: #F1D382; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+        
+        .product-card:hover .product-img { transform: scale(1.05); }
+        .product-img { transition: transform 0.5s ease; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="#home" class="flex-shrink-0 flex items-center gap-3 group">
+                    <img src="https://placehold.co/200x200/001F3F/D4AF37?text=AO" alt="Andhra Opticals Logo" class="w-12 h-12 rounded-lg object-contain border border-[#D4AF37]/20 transition-transform group-hover:scale-105">
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold tracking-tighter text-[#001F3F]">ANDHRA OPTICALS</span>
+                        <span class="text-[10px] tracking-[0.2em] font-medium text-[#D4AF37] -mt-1">& WATCH CO.</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#home" class="text-slate-600 hover:text-[#D4AF37] transition-colors">Home</a>
+                    <a href="#about" class="text-slate-600 hover:text-[#D4AF37] transition-colors">About Us</a>
+                    <a href="#products" class="text-slate-600 hover:text-[#D4AF37] transition-colors">Products</a>
+                    <a href="#gallery" class="text-slate-600 hover:text-[#D4AF37] transition-colors">Gallery</a>
+                    <a href="#contact" class="text-slate-600 hover:text-[#D4AF37] transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="tel:9885043914" class="hidden sm:flex items-center gap-2 bg-[#001F3F] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition-all">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#001F3F]">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1511499767350-a1590fdb2e17?auto=format&fit=crop&q=80&w=2000" alt="Premium Eyewear Background" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left animate-fade-in">
+                    <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-[#D4AF37] uppercase border border-[#D4AF37] rounded-full">
+                        Established 1990s
+                    </span>
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                        Your Trusted Destination for <span class="text-[#D4AF37]">Eyewear & Watches</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 mb-10 max-w-xl mx-auto lg:mx-0">
+                        Premium eyeglasses, sunglasses, lenses, and stylish watches curated for every generation. Experience clarity and timeless style.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#products" class="bg-[#D4AF37] text-[#001F3F] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#F1D382] transition-all flex items-center justify-center gap-2 shadow-xl">
+                            Explore Collection <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#contact" class="border border-white/30 bg-white/10 text-white backdrop-blur-sm px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-[#001F3F] transition-all flex items-center justify-center gap-2">
+                            Visit Store <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Trust Badges -->
+                    <div class="mt-12 flex flex-wrap justify-center lg:justify-start gap-6">
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-[#D4AF37]"></i> Trusted Local Business
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-[#D4AF37]"></i> Genuine Products
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80 text-sm">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-[#D4AF37]"></i> Latest Designs
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
+                        <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a1e?auto=format&fit=crop&q=80&w=1000" alt="Luxury Watches" class="w-full">
+                    </div>
+                    <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-[#D4AF37]/20 rounded-full blur-3xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <img src="https://images.unsplash.com/photo-1511499767350-a1590fdb2e17?auto=format&fit=crop&q=80&w=1000" alt="Eyewear display" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-sm font-bold text-[#D4AF37] uppercase tracking-widest mb-4">Legacy of Quality</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-[#001F3F] mb-6">See Better. Live Better. Stay Timeless.</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Andhra Opticals & Watch Co. has been serving customers with quality eyewear and watches for decades. We pride ourselves on being a cornerstone of the Tuni community, providing expert vision care and premium timekeeping.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        We combine professional guidance, genuine products, and personalized service to help customers find the perfect vision and style solutions tailored to their unique needs.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="p-4 bg-slate-50 rounded-xl">
+                            <span class="block text-3xl font-bold text-[#001F3F]">30+</span>
+                            <span class="text-sm text-slate-500 font-medium">Years of Trust</span>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-xl">
+                            <span class="block text-3xl font-bold text-[#001F3F]">5k+</span>
+                            <span class="text-sm text-slate-500 font-medium">Happy Customers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#001F3F] mb-4">Our Premium Collections</h2>
+                <div class="w-24 h-1 bg-[#D4AF37] mx-auto mb-8"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Eyewear Card -->
+                <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800" alt="Eyewear" class="product-img w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#001F3F]/80 to-transparent flex items-end p-6">
+                            <span class="text-white font-bold text-xl uppercase tracking-wider">Eyewear</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Prescription & Reading</li>
+                            <li class="flex items-center gap-3 text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Computer & Blue Cut</li>
+                            <li class="flex items-center gap-3 text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Progressive Lenses</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sunglasses Card -->
+                <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1511499767350-a1590fdb2e17?auto=format&fit=crop&q=80&w=800" alt="Sunglasses" class="product-img w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#001F3F]/80 to-transparent flex items-end p-6">
+                            <span class="text-white font-bold text-xl uppercase tracking-wider">Sunglasses</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> UV Protection Lenses</li>
+                            <li class="flex items-center gap-3 text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Fashion Forward Designs</li>
+                            <li class="flex items-center gap-3 text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Premium Branded Collections</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Watches Card -->
+                <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&q=80&w=800" alt="Watches" class="product-img w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#001F3F]/80 to-transparent flex items-end p-6">
+                            <span class="text-white font-bold text-xl uppercase tracking-wider">Watches</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Men's & Women's Classic</li>
+                            <li class="flex items-center gap-3 text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Smart Watches & Trackers</li>
+                            <li class="flex items-center gap-3 text-slate-600 text-sm"><i data-lucide="check" class="w-4 h-4 text-[#D4AF37]"></i> Luxury & Sports Watches</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-[#001F3F] text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <div class="col-span-full mb-8 text-center">
+                    <h2 class="text-3xl font-bold">Why Customers Choose Us</h2>
+                </div>
+                <div class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition-all group">
+                    <i data-lucide="award" class="w-10 h-10 text-[#D4AF37] mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-xl font-bold mb-3">Expert Guidance</h4>
+                    <p class="text-slate-400 text-sm">Professional advice to ensure your eyewear fits perfectly and suits your vision needs.</p>
+                </div>
+                <div class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition-all group">
+                    <i data-lucide="shield-check" class="w-10 h-10 text-[#D4AF37] mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-xl font-bold mb-3">Genuine Products</h4>
+                    <p class="text-slate-400 text-sm">100% authentic brands and high-quality materials sourced directly from manufacturers.</p>
+                </div>
+                <div class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition-all group">
+                    <i data-lucide="trending-up" class="w-10 h-10 text-[#D4AF37] mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-xl font-bold mb-3">Latest Trends</h4>
+                    <p class="text-slate-400 text-sm">Stay ahead of fashion with our regularly updated collection of trendy frames and watches.</p>
+                </div>
+                <div class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition-all group">
+                    <i data-lucide="wallet" class="w-10 h-10 text-[#D4AF37] mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-xl font-bold mb-3">Affordable Pricing</h4>
+                    <p class="text-slate-400 text-sm">Premium luxury made accessible with fair pricing and options for every budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-[#001F3F] mb-4">In Our Store</h2>
+                <p class="text-slate-500">A glimpse into the Andhra Opticals & Watch Co. experience.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="space-y-4">
+                    <img src="https://images.unsplash.com/photo-1556015528-765d1d6435f0?auto=format&fit=crop&q=80&w=600" alt="Shop Interior" class="rounded-xl w-full h-48 object-cover shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=600" alt="Watch Case" class="rounded-xl w-full h-64 object-cover shadow-lg">
+                </div>
+                <div class="space-y-4 pt-8">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=600" alt="Glasses Collection" class="rounded-xl w-full h-64 object-cover shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&q=80&w=600" alt="Premium Watch" class="rounded-xl w-full h-48 object-cover shadow-lg">
+                </div>
+                <div class="space-y-4">
+                    <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&q=80&w=600" alt="Optical Store" class="rounded-xl w-full h-48 object-cover shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?auto=format&fit=crop&q=80&w=600" alt="Eyewear Portrait" class="rounded-xl w-full h-64 object-cover shadow-lg">
+                </div>
+                <div class="space-y-4 pt-8">
+                    <img src="https://images.unsplash.com/photo-1517466787919-ec4577da3175?auto=format&fit=crop&q=80&w=600" alt="Timepiece" class="rounded-xl w-full h-64 object-cover shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1495707902641-75cac588d2e9?auto=format&fit=crop&q=80&w=600" alt="Checking glasses" class="rounded-xl w-full h-48 object-cover shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-[#001F3F]">What Our Customers Say</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="flex text-[#D4AF37] mb-4">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Excellent service and quality products. I bought my progressive lenses here and the clarity is unmatched."</p>
+                    <span class="font-bold text-[#001F3F]">— Regular Customer</span>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="flex text-[#D4AF37] mb-4">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Best optical and watch store in town. They have an amazing collection of premium watches at great prices."</p>
+                    <span class="font-bold text-[#001F3F]">— Local Resident</span>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="flex text-[#D4AF37] mb-4">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Trusted shop with great customer care. Mr. Khalil Basha ensures every customer leaves satisfied."</p>
+                    <span class="font-bold text-[#001F3F]">— Tuni Business Professional</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 relative bg-[#D4AF37]">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-[#001F3F] mb-6">Find Your Perfect Vision & Style Today</h2>
+            <p class="text-lg text-[#001F3F]/80 mb-10">
+                Visit Andhra Opticals & Watch Co. and discover premium eyewear and watches designed for comfort, quality, and elegance.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="tel:9885043914" class="bg-[#001F3F] text-white px-10 py-4 rounded-xl font-bold hover:shadow-2xl transition-all flex items-center gap-3">
+                    <i data-lucide="phone" class="w-5 h-5"></i> Call Now
+                </a>
+                <a href="https://wa.me/919885043914" class="bg-emerald-600 text-white px-10 py-4 rounded-xl font-bold hover:bg-emerald-700 hover:shadow-2xl transition-all flex items-center gap-3">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp Us
+                </a>
+                <a href="#contact" class="bg-white text-[#001F3F] px-10 py-4 rounded-xl font-bold hover:shadow-2xl transition-all flex items-center gap-3">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i> Get Directions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-slate-900 rounded-[3rem] p-8 lg:p-16 flex flex-col lg:flex-row items-center gap-16 overflow-hidden relative">
+                <div class="absolute top-0 right-0 p-12 opacity-10">
+                    <i data-lucide="quote" class="w-48 h-48 text-white"></i>
+                </div>
+                <div class="w-full lg:w-1/3 relative z-10">
+                    <div class="aspect-square rounded-2xl overflow-hidden border-4 border-[#D4AF37]">
+                        <img src="#" alt="Khalil Basha" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+                </div>
+                <div class="w-full lg:w-2/3 relative z-10">
+                    <span class="text-[#D4AF37] font-bold uppercase tracking-widest text-sm mb-4 block">The Visionary Founder</span>
+                    <h2 class="text-4xl font-bold text-white mb-2">Khalil Basha</h2>
+                    <h3 class="text-xl text-slate-400 mb-8 italic">Founder & Proprietor</h3>
+                    <p class="text-slate-300 text-lg leading-relaxed mb-6">
+                        "With nearly 30 years of experience, our mission has always been to provide more than just products—we provide clarity and confidence."
+                    </p>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        Mr. Khalil Basha has earned the trust of generations of customers in Tuni through honest service, quality products, and customer-first values. His dedication to excellence has made Andhra Opticals & Watch Co. a trusted name for eyewear and watches.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="h-px flex-1 bg-white/10"></div>
+                        <span class="text-xs uppercase tracking-widest text-slate-500">Integrity • Quality • Excellence</span>
+                        <div class="h-px flex-1 bg-white/10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="max-w-3xl mx-auto"> <!-- Centered the contact info since form is removed -->
+                <h2 class="text-3xl font-bold text-[#001F3F] mb-8 text-center">Get In Touch</h2>
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="flex flex-col items-center text-center p-6 bg-slate-50 rounded-2xl">
+                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-sm">
+                            <i data-lucide="phone-call" class="w-6 h-6 text-[#D4AF37]"></i>
+                        </div>
+                        <h4 class="font-bold text-[#001F3F]">Phone / WhatsApp</h4>
+                        <p class="text-slate-600">9885043914</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-6 bg-slate-50 rounded-2xl">
+                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-sm">
+                            <i data-lucide="map-pin" class="w-6 h-6 text-[#D4AF37]"></i>
+                        </div>
+                        <h4 class="font-bold text-[#001F3F]">Address</h4>
+                        <p class="text-slate-600">Opp. Indian Oil Bunk, GNT Road, Tuni</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-6 bg-slate-50 rounded-2xl">
+                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 shadow-sm">
+                            <i data-lucide="clock" class="w-6 h-6 text-[#D4AF37]"></i>
+                        </div>
+                        <h4 class="font-bold text-[#001F3F]">Business Hours</h4>
+                        <p class="text-slate-600">9:00 AM – 9:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Map Integration -->
+                <div class="rounded-3xl overflow-hidden shadow-2xl h-80 bg-slate-100 relative group">
+                    <div class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-4 z-10 bg-black/5 group-hover:bg-transparent transition-all">
+                        <i data-lucide="map" class="w-12 h-12 text-[#D4AF37]"></i>
+                        <a href="https://www.google.com/maps/search/Andhra+Opticals+Watch+Co+Tuni" target="_blank" class="bg-white text-[#001F3F] px-6 py-2 rounded-full font-bold shadow-lg hover:bg-[#D4AF37] hover:text-white transition-all">Open in Google Maps</a>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=1000" alt="Map View" class="w-full h-full object-cover opacity-40">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-[100]">
+        <a href="https://wa.me/919885043914" target="_blank" class="group relative flex items-center">
+            <!-- Tooltip/Greeting -->
+            <div class="absolute right-full mr-4 bg-white text-[#001F3F] px-4 py-2 rounded-xl shadow-xl text-sm font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all transform translate-x-4 group-hover:translate-x-0 pointer-events-none border border-slate-100">
+                Chat with us on WhatsApp!
+            </div>
+            <!-- Main Button -->
+            <div class="bg-emerald-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:bg-emerald-600 transition-all hover:scale-110 active:scale-95 animate-bounce-subtle">
+                <i data-lucide="message-circle" class="w-8 h-8"></i>
+                <!-- Notification Dot -->
+                <span class="absolute top-0 right-0 flex h-4 w-4">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-4 w-4 bg-emerald-600 border-2 border-white"></span>
+                </span>
+            </div>
+        </a>
+    </div>
+
+    <style>
+        @keyframes bounce-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .animate-bounce-subtle {
+            animation: bounce-subtle 3s infinite ease-in-out;
+        }
+    </style>
+
+    <footer class="bg-[#001F3F] text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-white/10 pb-12 mb-12">
+                <div class="text-center md:text-left mb-8 md:mb-0">
+                    <span class="text-2xl font-bold tracking-tighter block">ANDHRA OPTICALS</span>
+                    <span class="text-xs tracking-[0.3em] font-medium text-[#D4AF37] mb-2 block uppercase">Andhra Watch Co.</span>
+                    <p class="text-slate-400 text-sm mt-4">See Better. Live Better. Stay Timeless.</p>
+                </div>
+                <div class="flex gap-8">
+                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#D4AF37] transition-all"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-[#D4AF37] transition-all"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="https://wa.me/919885043914" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-all"><i data-lucide="message-square" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-slate-400 text-xs">
+                <p>&copy; 2026 Andhra Opticals & Watch Co. All Rights Reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Simple scroll behavior for the navbar shadow
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
